@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: ibm-apic-instance
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "280"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   labels:
@@ -29,8 +29,8 @@ spec:
             spec:
               license:
                 accept: true
-                use: production
+                use: development
                 license: L-RJON-C7QFWS
               version: 10.0.4.0-ifix1-54
-              profile: n3xc14.m48
-              storageClassName: ibmc-block-gold
+              profile: n1xc10.m48
+              storageClassName: pvc-54e2dbe1-8350-4d73-88e0-36e5c62eebf1
